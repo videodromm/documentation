@@ -40,7 +40,7 @@
 <h3>
 <a id="engines" class="anchor" href="#engines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Engines</h3>
 
-<p>openFrameworks and Cinder frameworks will be used for the C++ part, based on the pure C++ structures. For javascript, use angularjs, nodejs, mongodb, threejs but that's to be determined later.</p>
+<p>openFrameworks and Cinder frameworks will be used for the C++ part, based on the pure C++ structures. For javascript, use angularjs, nodejs, mongodb, threejs but that's to be determined later. Other languages can be added to use Unreal Engine, Unity, etc.</p>
 
 <h3>
 <a id="network" class="anchor" href="#network" aria-hidden="true"><span class="octicon octicon-link"></span></a>Network</h3>
@@ -65,24 +65,27 @@
 </ul>
 
 <h3>
-<a id="workflow" class="anchor" href="#workflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git workflow</h3>
+<a id="assets" class="anchor" href="#assets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assets</h3>
 
-<p>The projet source is hosted on github, in several repositories. To compile the projects without modifications you can just clone the desired projects. If you want to contribute, I suggest the following workflow:</p>
+<p>Support a variety of file formats:</p>
 <ul>
-  <li>Fork the project</li>
-  <li>Clone your fork</li>
-  <li>Configure the link to the parent repo: git remote add upstream git://github.com/videodromm/documentation.git</li>
-  <li>Before coding, get latest modifications from the parent: git fetch upstream and git merge upstream/master master</li>
-  <li>Do some coding</li>
-  <li>Commit and push to your repo</li>
-  <li>Do a pull request for review and integration in the parent repo</li>
-  <li>Relax/eat/sleep, then when you're back to coding fetch and merge as before...</li>
+  <li>Images: jpg, png, gif</li>
+  <li>Videos: mp4, mov, preference for image sequence enabled codecs like hap, dxv</li>
+  <li>Shaders: fragment shaders (compatible with <a href="https://www.shadertoy.com/">shadertoy</a>), vertex shaders</li>
+  <li>3D models: obj</li>
+  <li>Audio: wav, mp3, ogg</li>
 </ul>
 
 <h3>
 <a id="ui" class="anchor" href="#ui" aria-hidden="true"><span class="octicon octicon-link"></span></a>User interface</h3>
 
 <p>The UI will be the excellent Immediate Mode GUI: <a href="https://github.com/ocornut/imgui">imgui from Omar Cornut</a></p>
+
+<h3>
+<a id="audio" class="anchor" href="#audio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Audio</h3>
+
+<p>Support audio analysis from linein, wave files, Ableton Live via LiveOsc ("/live/track/meter")</p>
+<p>Wave file playback possible</p>
 
 <h3>
 <a id="input" class="anchor" href="#input" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hardware input</h3>
@@ -106,6 +109,21 @@
   <li>Screens</li>
   <li>VR devices</li>
   <li>Mobile/Tablet</li>
+</ul>
+
+<h3>
+<a id="workflow" class="anchor" href="#workflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git workflow</h3>
+
+<p>The projet source is hosted on github, in several repositories. To compile the projects without modifications you can just clone the desired projects. If you want to contribute, I suggest the following workflow:</p>
+<ul>
+  <li>Fork the project</li>
+  <li>Clone your fork</li>
+  <li>Configure the link to the parent repo: git remote add upstream git://github.com/videodromm/documentation.git</li>
+  <li>Before coding, get latest modifications from the parent: git fetch upstream and git merge upstream/master master</li>
+  <li>Do some coding</li>
+  <li>Commit and push to your repo</li>
+  <li>Do a pull request for review and integration in the parent repo</li>
+  <li>Relax/eat/sleep, then when you're back to coding fetch and merge as before...</li>
 </ul>
 
 <h3>
