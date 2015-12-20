@@ -36,9 +36,16 @@
 <h3>
 <a id="engines" class="anchor" href="#engines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Engines</h3>
 
-<p>openFrameworks and Cinder frameworks will be used for the C++ part. For javascript, use angularjs, nodejs, mongodb, threejs but that's to be determined later.</p>
+<p>openFrameworks and Cinder frameworks will be used for the C++ part, based on the pure C++ structures. For javascript, use angularjs, nodejs, mongodb, threejs but that's to be determined later.</p>
 
+<h3>
+<a id="network" class="anchor" href="#network" aria-hidden="true"><span class="octicon octicon-link"></span></a>Network</h3>
 
+<p>OSC and webSockets will be used. The goal is to have a standalone renderer, which can be controlled remotely with</p>
+<ul>
+  <li>TouchOsc on mobile/tablet: we stick to TouchOSC default messages like "/1/fader1"</li>
+  <li>LiveOSC for Ableton: messages likes "/live/meter"</li>
+</ul>
       </section>
     </div>
 
