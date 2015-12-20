@@ -58,7 +58,9 @@
 <ul>
   <li>Videodrömm visualizer(C++): standalone renderer for projections/installations</li>
   <li>Videodrömm server(nodejs): webSockets server for multiple websocket clients, routes the json messages from OSC, MIDI, etc</li>
+  <li>Videodrömm (C++): controller, webSocket client</li>
   <li>Videodrömm livecoding(C++): editor livecoding of glsl shaders, when they compile successfully, they are sent to the server via webSockets</li>
+  <li>Videodrömm vr(C++): vr renderer, using Spout, glsl shaders. We target Oculus DK2, webVR, etc</li>
 </ul>
 
 <h3>
@@ -67,6 +69,13 @@
 <p>The projet source is hosted on github, in several repositories. To compile the projects without modifications you can just clone the desired projects. If you want to contribute, I suggest the following workflow:</p>
 <ul>
   <li>Fork the project</li>
+  <li>Clone your fork</li>
+  <li>Configure the link to the parent repo: git remote add upstream git://github.com/videodromm/documentation.git</li>
+  <li>Before coding, get latest modifications from the parent: git fetch upstream and git merge upstream/master master</li>
+  <li>Do some coding</li>
+  <li>Commit and push to your repo</li>
+  <li>Do a pull request for review and integration in the parent repo</li>
+  <li>Relax/eat/sleep, then when you're back to coding fetch and merge as before...</li>
 </ul>
 
 
