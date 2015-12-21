@@ -22,14 +22,12 @@
     <div class="container">
       <section id="main_content">
 <h3><a id="cmd" class="anchor" href="#cmd" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commands</h3>
- <p>Command to follow step by step</p>
+ <p>Commands to follow step by step</p>
 <ul>
   <li>Open powershell or terminal</li>
   <li>Go to top level or home folder: cd \ or cd ~</li>
   <li>Create the folder: mkdir videodrömm</li>
   <li>Change current folder: cd videodrömm</li>
-  <li>Checkout openFrameworks: git clone https://github.com/openframeworks/openFrameworks.git --recursive</li>
-  <li>Checkout Cinder: git clone https://github.com/cinder/Cinder.git --recursive</li>
   <li>Setup Visual Studio Community 2015 or use your favourite IDE</li>
   <li>Fork the assets repo: https://github.com/videodromm/assets.git</li>
   <li>Clone your assets repo: git clone https://github.com/YOURGITHUBNAME/assets.git</li>
@@ -40,8 +38,19 @@
   <li>Do a pull request for review and integration in the parent repo</li>
 
 </ul>
+<p>Those steps can be seen on <a href="https://www.livecoding.tv/video/videodromm-setup-the-development-environment/">livecoding.tv</a></p>
 
-<p>If you use Cinder, compile it with Visual Studio 2015 using Batch build: check 32 bit Debug and Release versions</p>
+<h3><a id="cinder" class="anchor" href="#cinder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cinder</h3>
+<p>If you use Cinder, checkout Cinder: git clone https://github.com/cinder/Cinder.git --recursive<br />
+Open Cinder.sln in the vc2013 with Visual Studio 2015<br />
+ Compile it with Visual Studio 2015 using Batch build: check 32 bit Debug and Release versions<br />
+Create a test project with Tinderbox
+ </p>
+
+<h3><a id="openframeworks" class="anchor" href="#openframeworks" aria-hidden="true"><span class="octicon octicon-link"></span></a>openFrameworks</h3>
+<p>If you use openFrameworks, checkout openFrameworks: git clone https://github.com/openframeworks/openFrameworks.git<br />
+Create a test project with projectGenerator</p>
+
       </section>
     </div>
   </body>
