@@ -28,46 +28,43 @@
 <ul>
   <li>Open powershell or terminal</li>
   <li>Go to top level or home folder: cd \ or cd ~</li>
+  <li>Create the folder: mkdir vd</li>
+  <li>Change current folder: cd vd</li>
+  <li>Clone Cinder inside this folder, see sections below</li>
+  <li>Optional: Setup Visual Studio Community 2015 or use your favourite IDE</li>
+  <li>Create another subfolder called videodrömm for the repos we are going to work in</li>
   <li>Create the folder: mkdir videodromm</li>
   <li>Change current folder: cd videodromm</li>
-  <li>Clone Cinder or openFramework inside this folder, see sections below</li>
-  <li>Setup Visual Studio Community 2015 or use your favourite IDE</li>
-  <li>Create another subfolder called videodrömm for the repos we are going to work in</li>
-  <li>Create the folder: mkdir videodrömm</li>
-  <li>Change current folder: cd videodrömm</li>
   <li>Choose the repo(s) you want to use, for example let's use the assets repo:</li>
   <li>Fork the assets repo: https://github.com/videodromm/assets.git</li>
   <li>Clone your assets repo: git clone https://github.com/YOURGITHUBNAME/assets.git</li>
-  <li>Configure the link to the parent folder for future pull requests: git remote add upstream git://github.com/videodromm/assets.git</li>
-  <li>Before coding, get latest modifications from the parent: git fetch upstream and git merge upstream/master master</li>
-  <li>Do some coding</li>
-  <li>Commit and push to your repo</li>
-  <li>Do a pull request for review and integration in the parent repo</li>
+  <li>Optional: Configure the link to the parent folder for future pull requests: git remote add upstream git://github.com/videodromm/assets.git</li>
+  <li>Optional: Before coding, get latest modifications from the parent: git fetch upstream and git merge upstream/master master</li>
+  <li>Optional: Do some coding</li>
+  <li>Optional: Commit and push to your repo</li>
+  <li>Optional: Do a pull request for review and integration in the parent repo</li>
+  <li>Clone the repo: https://github.com/videodromm/videodromm-controller-cinder</li>
 
 </ul>
-<p>Blocks to checkout in you Cinder/blocks folder</p>
+<p>Blocks to checkout in you Cinder/blocks folder or better, use ./install.sh from /videodromm/videodromm-controller-cinder</p>
 <ul>
-  <li>Cinder-Hap2: https://github.com/mpcdigital/Cinder-Hap2</li>
-  <li>Cinder-Warping: https://github.com/paulhoux/Cinder-Warping</li>
-  <li>Cinder-WebSocketPP: https://github.com/brucelane/Cinder-WebSocketPP</li>
-  <li>Cinder-Spout: https://github.com/brucelane/Cinder-Spout</li>
-  <li>Cinder-ImGui: https://github.com/simongeilfus/Cinder-Imgui</li>
-  <li>Cinder-Midi2: https://github.com/brucelane/Cinder-MIDI2 glNext branch</li>
-  <li>Most-Pixels-Ever: https://github.com/brucelane/Most-Pixels-Ever-Cinder</li>
-  <li>UnionJack: https://github.com/brucelane/UnionJack</li>
+  <li>Cinder-Hap2: https://github.com/videodromm/Cinder-Videodromm </li>
+  <li>Cinder-Hap2: https://github.com/videodromm/Cinder-Hap2 </li>
+  <li>Cinder-Warping: https://github.com/paulhoux/Cinder-Warping </li>
+  <li>Cinder-WebSocketPP: https://github.com/videodromm/Cinder-WebSocketPP </li>
+  <li>Cinder-Spout: https://github.com/brucelane/Cinder-Spout /li>
+  <li>Cinder-ImGui: https://github.com/simongeilfus/Cinder-Imgui --recursive</li>
+  <li>Cinder-Midi2: https://github.com/brucelane/Cinder-MIDI2 </li>
 </ul>
+
 <p>Those steps can be seen on <a href="https://www.livecoding.tv/video/videodromm-setup-the-development-environment/">livecoding.tv</a></p>
 
 <h3><a id="cinder" class="anchor" href="#cinder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cinder</h3>
-<p>If you use Cinder, checkout Cinder: git clone https://github.com/cinder/Cinder.git --recursive<br />
+<p>On linux only: git clone https://github.com/cinder/Cinder.git --recursive -b android_linux ( follow instructions on https://github.com/cinder/Cinder/wiki/Cinder-for-Linux ) <br />on Windows/OsX: git clone https://github.com/cinder/Cinder.git --recursive<br />
 Open Cinder.sln in the vc2013 with Visual Studio 2015<br />
  Compile it with Visual Studio 2015 using Batch build: check 32 bit Debug and Release versions<br />
 Create a test project with Tinderbox
  </p>
-
-<h3><a id="openframeworks" class="anchor" href="#openframeworks" aria-hidden="true"><span class="octicon octicon-link"></span></a>openFrameworks</h3>
-<p>If you use openFrameworks, checkout openFrameworks: git clone https://github.com/openframeworks/openFrameworks.git --recursive<br />
-Create a test project with projectGenerator</p>
 
 <h3><a id="python" class="anchor" href="#python" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python</h3>
 <p>If you use Python, setup version 3.5 <br />
