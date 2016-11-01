@@ -44,8 +44,10 @@
 <p>Integrate <a href="http://shawnlawson.github.io/The_Force/">The_Force</a> by adding nodejs websocket server to share: live-coded shaders, uniform variables (OSC already supported but to improve)
 <p>The main renderer is <a href="https://github.com/videodromm/videodromm-visualizer-cinder">the visualizer</a> which is controlled remotely a <a href="https://github.com/videodromm/videodromm-browser">a html5 app in a browser</a>. The goal is to achieve maximum performance by remotely controlling the renderer. The html5 controller needs a UI to act on slider/rotary/color elements which send websocket messages on change events.</p>
 <p>Support for loading textures (jpg, png, webp, mp4, gif, audio fft) remotely: all files must be received in a <a href="https://github.com/videodromm/assets">assets</a> folder which is common to html and c++ apps. Cinder apps, which are checkout in folders aside the assets folder, take advantage to use a shared assets folder as Cinder searchs up to 5 parent folders for the assets folder.</p>
-<p>Support streaming of webp images across the network</p>
+<p>Support streaming of webp images across the network (ok for js, need to find a way in c++)</p>
 <p>Implement Test Driven Development (TDD): mocha for js, googletest(?) for c++</p>
+<p>Prefer json to xml</p>
+<p>Use fragment shaders compatible with webGL, keep the syntax from <a href="https://shadertoy.com/">Shadertoy</a>(iResolution, iGlobalTime, iMouse, iChannel0</p>
 <p>Option: Support for <a href="https://www.openlighting.org/ola/">Open Lighting Architecture</a></p>
 
 <h3>
@@ -60,10 +62,11 @@
 <ul>
   <li><a href="http://hexler.net/software/touchosc">TouchOsc</a> on mobile/tablet: we stick to TouchOSC default messages like "/1/fader1"</li>
   <li><a href="http://livecontrol.q3f.org/ableton-liveapi/liveosc/">LiveOSC</a> for Ableton: messages likes "/live/meter"</li>
+  <li><a href="http://editor.thebookofshaders.com/">Glsl editor</a> </li>  
+  <li><a href="http://shawnlawson.github.io/The_Force/">The_Force</a> </li>
 </ul>
 <p>About TouchOsc, here are some <a href="touchosc.html">screen captures</a> from the Android version with the default layouts we are using</p>
 
-<p>When possible, the JSON format is to be preferred over XML, text...</p>
 <img src="images/android-nexus-ui.jpg" />
 
 <h3>
