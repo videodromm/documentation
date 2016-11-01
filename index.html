@@ -40,10 +40,11 @@
 
 <h3>
 <a id="roadmap" class="anchor" href="#roadmap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Roadmap</h3>
-<p>Integrate <a href="https://github.com/patriciogonzalezvivo/glslEditor">Glsl editor</a></p> by adding nodejs websocket server to share: live-coded shaders, uniform variables (need to switch from socket.io to ws)
-<p>Integrate <a href="http://shawnlawson.github.io/The_Force/">The_Force</a></p> by adding nodejs websocket server to share: live-coded shaders, uniform variables (OSC already supported but to improve)
+<p>Integrate <a href="https://github.com/patriciogonzalezvivo/glslEditor">Glsl editor</a> by adding nodejs websocket server to share: live-coded shaders, uniform variables (need to switch from socket.io to ws)
+<p>Integrate <a href="http://shawnlawson.github.io/The_Force/">The_Force</a> by adding nodejs websocket server to share: live-coded shaders, uniform variables (OSC already supported but to improve)
 <p>The main renderer is <a href="https://github.com/videodromm/videodromm-visualizer-cinder">the visualizer</a> which is controlled remotely a <a href="https://github.com/videodromm/videodromm-browser">a html5 app in a browser</a>. The goal is to achieve maximum performance by remotely controlling the renderer. The html5 controller needs a UI to act on slider/rotary/color elements which send websocket messages on change events.</p>
 <p>Support for loading textures (jpg, png, webp, mp4, gif, audio fft) remotely: all files must be received in a <a href="https://github.com/videodromm/assets">assets</a> folder which is common to html and c++ apps. Cinder apps, which are checkout in folders aside the assets folder, take advantage to use a shared assets folder as Cinder searchs up to 5 parent folders for the assets folder.</p>
+<p>Support streaming of webp images across the network</p>
 <p>Implement Test Driven Development (TDD): mocha for js, googletest(?) for c++</p>
 <p>Option: Support for <a href="https://www.openlighting.org/ola/">Open Lighting Architecture</a></p>
 
